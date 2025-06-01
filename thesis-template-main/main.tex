@@ -1,0 +1,373 @@
+%% This is the ctufit-thesis example file. It is used to produce theses
+%% for submission to Czech Technical University, Faculty of Information Technology.
+%%
+%% This is version 1.3.9, built 7. 1. 2025.
+%%
+%% Get the newest version from
+%% https://gitlab.fit.cvut.cz/theses-templates/FITthesis-LaTeX
+%%
+%%
+%% Copyright 2024, Tomas Novacek
+%% Copyright 2021, Eliska Sestakova and Ondrej Guth
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%  https://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The current maintainer of this work is Tomas Novacek.
+%% Alternatively, submit bug reports to the tracker at
+%% https://gitlab.fit.cvut.cz/theses-templates/FITthesis-LaTeX/issues
+%%
+%%
+
+% arara: xelatex
+% arara: biber
+% arara: xelatex
+% arara: xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CLASS OPTIONS
+% language: czech/english/slovak
+% thesis type: bachelor/master/dissertation
+% colour: bw for black&white OR no option for default colour scheme
+% electronic (oneside) or printed (twoside), twoside is default
+% paragraph - if passed, this optional argument sets paragraphs as the deepest level of headers, styles it, numbers it and adds it to Table of Content. Use with care! Normally, it is considered unwise to use it, since its too deep.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[czech,bachelor,unicode,oneside]{ctufit-thesis}
+
+\usepackage{polyglossia} 
+\setdefaultlanguage{czech}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FILL IN THIS INFORMATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctufittitle{Konceptualizace regulací a právních předpisů} % replace with the title of your thesis
+\ctufitauthorfull{Veronika Vondrová} % replace with your full name (first name(s) and then family name(s) / surname(s)) including academic degrees
+\ctufitauthorsurnames{Vondrová} % replace with your surname(s) / family name(s)
+\ctufitauthorgivennames{Veronika} % replace with your first name(s) / given name(s)
+\ctufitsupervisor{doc.\,Ing.\,Robert Pergl,\,Ph.D.} % replace with name of your supervisor/advisor (include academic degrees)
+\ctufitdepartment{Katedra softwarového inženýrství} % replace with the department of your defence
+\ctufitprogram{Informatika} % replace with your study program
+\ctufitspecialisation{Manažerská informatika} % replace with your specialisation
+\ctufityear{2025} % replace with the year of your defence
+\ctufitdeclarationplace{Praze} % replace with the place where you sign the declaration
+\ctufitdeclarationdate{16. května 2025} % replace with the date of signature of the declaration
+\ctufitabstractCZE{Tato bakalářská práce se zabývá otázkou formální konceptualizace právních předpisů a regulací prostřednictvím vybraných modelovacích metod, které nacházejí uplatnění v oblasti právní informatiky. Právní předpisy bývají tradičně prezentovány v přirozeném jazyce, což omezuje jejich přesnou interpretaci. Cílem práce je proto identifikovat vhodné nástroje pro převod právních textů do srozumitelné, formálně definované a strojově zpracovatelné podoby.
+
+V práci jsou analyzovány a komparativně hodnoceny vybrané modelovací přístupy z hlediska jejich expresivity, sémantické přesnosti, čitelnosti a schopnosti zachytit významové a procesní vazby. Hodnocení zahrnuje jak teoretická východiska, tak praktické aspekty implementace těchto přístupů v kontextu současné praxe konceptualizace právních předpisů.
+
+Na vybraném článku obecného nařízení o ochraně osobních údajů (GDPR) jsou představeny výsledné modely a jejich schopnost vystihnout složité regulační struktury při zachování srozumitelnosti, konzistence a interoperability. Výsledkem je návrh metodologického rámce, který kombinuje více modelovacích jazyků a nabízí doporučení pro přesnou a prakticky využitelnou reprezentaci právních předpisů.}
+
+\ctufitkeywordsCZE{právní předpisy, regulace, konceptuální modelování, interoperabilita, GDPR, UML, OntoUML, DEMO, BPMN, BORM, ODRL}
+
+\ctufitabstractENG{This bachelor's thesis addresses the issue of formal conceptualization of regulations and laws using selected modeling methods applied in the field of legal informatics. Legal regulations are traditionally expressed in natural language, which limits their precise interpretation. The aim of this thesis is therefore to identify suitable tools for transforming legal texts into a comprehensible, formally defined, and machine-processable form.
+
+The thesis analyzes and compares selected modeling approaches in terms of their expressiveness, semantic precision, readability, and ability to capture semantic and procedural dependencies. The evaluation includes both theoretical foundations and practical aspects of applying these approaches in the current practice of legal modeling.
+
+Based on the application of these methods to a selected article of the General Data Protection Regulation (GDPR), the resulting models are compared with regard to their ability to represent complex regulatory structures while maintaining clarity, consistency, and interoperability. The outcome is a proposed methodological framework that integrates multiple modeling languages and provides recommendations for the accurate and practically usable representation of legal regulations.}
+
+\ctufitkeywordsENG{laws, regulations, conceptual modeling, interoperability, GDPR, UML, OntoUML, DEMO, BPMN, BORM, ODRL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END FILL IN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CUSTOMIZATION of this template
+% Skip this part or alter it if you know what you are doing.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{iftex}[2020/03/06]
+\iftutex
+% XeLaTeX and LuaLaTeX
+\else
+\errmessage{Only compilation with XeLaTeX or LuaLaTeX is allowed}
+\stop
+\fi
+
+% hyperlinks
+\hypersetup{
+  pdfpagelayout=TwoPageRight,
+  colorlinks=false,
+  allcolors=decoration,
+  pdfborder={0 0 0.1}
+}
+
+% uncomment the following to hide all hyperlinks
+%\hypersetup{hidelinks}
+
+% uncomment the following to change the colour of all hyperlinks to CTU blue
+%\hypersetup{allbordercolors=decoration}
+
+\RequirePackage{pdfpages}[2020/01/28]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CUSTOMIZATION of this template END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Použití fontu Technika
+\usepackage{fontspec}
+\newfontfamily\fonttechnika{Technika}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DEMO CONTENTS SETTINGS
+% You may choose to modify this part.
+%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{dirtree}
+\usepackage{lipsum,tikz}
+\usepackage[style=iso-numeric]{biblatex}
+\addbibresource{text/bib-database.bib}
+\usepackage{xurl}
+\usepackage{listings} % typesetting of sources
+%\usepackage{minted}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage{csquotes}
+
+\newcommand{\gdprparagraph}[1]{%
+  \par\noindent
+  \begingroup
+  \setbox0=\vbox{%
+    \hsize=\dimexpr\linewidth-2.5em\relax
+    \setlength{\parskip}{0.5ex plus 0.2ex}
+    \setlength{\parindent}{0pt}
+    \raggedright
+    #1%
+  }%
+  \leavevmode
+  \rlap{\hspace{-1em}\color{gray}\rule{2pt}{\ht0+\dp0}}%
+  \hspace{1em}%
+  \box0
+  \endgroup
+  \vspace{1.2ex}
+}
+
+\usepackage{url}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{tikz}
+
+\usepackage{listings}
+\lstdefinelanguage{OCL}{
+  morekeywords={context, inv, self, implies, and, or, not, oclIsTypeOf, oclIsKindOf, size, isEmpty, notEmpty, true, false},
+  breaklines=true,
+  sensitive=true,
+  morecomment=[l]{--},
+  morestring=[b]"
+}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\usepackage{fancyvrb}  
+\usepackage{adjustbox}
+\usepackage{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DEMO CONTENTS SETTINGS END
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\frontmatter\frontmatterinit % do not remove these two commands
+
+\thispagestyle{empty}\maketitle\thispagestyle{empty}\cleardoublepage % do not remove these four commands
+
+\includepdf[pages={1-}]{vondrve1-assignment.pdf} % replace this file with your thesis assignment generated from ProjectsFIT
+
+\imprintpage % do not remove this command
+\stopTOCentries
+%%%%%%%%%%%%%%%%%%%%%%
+% list of other contents END
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGMENT
+% FILL IN / MODIFY
+% This is a place to thank people for helping you. It is common to thank your supervisor.
+%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgmentpage}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{\baselineskip}
+
+  Ráda bych poděkovala doc. Ing. Robertu Perglovi, Ph.D. za vedení této
+  práce, trpělivost, vstřícnost a veškeré podněty, které pro mě byly při tvorbě této práce nedocenitelné. Zároveň moc děkuji za stálou podporu při studiu i mimo něj.
+
+  Dále bych chtěla poděkovat Mgr. Robertu Perglovi za ochotu podělit se o svůj čas i znalosti a za to, že mi pomohl pochopit složitosti práva způsobem, který bych sama nezvládla. 
+
+  Mé hluboké poděkování patří také mé rodině za jejich neochvějnou podporu,
+  trpělivost a laskavost, které mi byly oporou ve všech důležitých i všedních
+  chvílích studia a celého života. Děkuji za všechno. 
+\end{acknowledgmentpage}
+
+%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGMENT END
+%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%
+% DECLARATION
+% FILL IN / MODIFY
+%%%%%%%%%%%%%%%%%%%
+% INSTRUCTIONS
+% ENG: choose one of approved texts of the declaration. DO NOT CREATE YOUR OWN. Find the approved texts at https://courses.fit.cvut.cz/SFE/download/index.html#_documents (document Declaration for FT in English)
+% CZE/SLO: Vyberte jedno z fakultou schvalenych prohlaseni. NEVKLADEJTE VLASTNI TEXT. Schvalena prohlaseni najdete zde: https://courses.fit.cvut.cz/SZZ/dokumenty/index.html#_dokumenty (prohlášení do ZP)
+\begin{declarationpage}
+  Prohlašuji, že jsem předloženou práci vypracovala samostatně a že jsem uvedla veškeré použité
+  informační zdroje v souladu s Metodickým pokynem o dodržování etických principů při přípravě
+  vysokoškolských závěrečných prací.
+
+  Beru na vědomí, že se na moji práci vztahují práva a povinnosti vyplývající ze zákona č. 121/2000 Sb.,
+  autorského zákona, ve znění pozdějších předpisů. V souladu s ust. § 2373 odst. 2 zákona č. 89/2012
+  Sb., občanský zákoník, ve znění pozdějších předpisů, tímto uděluji nevýhradní oprávnění (licenci) k
+  užití této mojí práce, a to včetně všech počítačových programů, jež jsou její součástí či přílohou a
+  veškeré jejich dokumentace (dále souhrnně jen „Dílo“), a to všem osobám, které si přejí Dílo užít. Tyto
+  osoby jsou oprávněny Dílo užít jakýmkoli způsobem, který nesnižuje hodnotu Díla a za jakýmkoli
+  účelem (včetně užití k výdělečným účelům). Toto oprávnění je časově, teritoriálně i množstevně
+  neomezené.
+
+  Prohlašuji, že jsem v průběhu příprav a psaní závěrečné práce použila nástroje umělé
+  inteligence, a to na korekturu textu a nápady při modelování. Vygenerovaný obsah jsem ověřila. Stvrzuji, že jsem si vědoma, že za obsah
+  závěrečné práce plně zodpovídám.
+
+  {
+    %\fonttechnika
+    %Tohle je ukázka použití fontu \textbf{Technika}. Jak přidat font \textit{Technika} do svého projektu? Stačí následující příkazy:
+    %\begin{lstlisting}[language={[LaTeX]TeX}]
+     %   \usepackage{fontspec}
+      %  \newfontfamily\fonttechnika{Technika}
+       % {\fonttechnika Tohle je Technika}
+    %\end{lstlisting}
+  }
+\end{declarationpage}
+%%%%%%%%%%%%%%%%%%%
+% DECLARATION END
+%%%%%%%%%%%%%%%%%%%
+
+\printtwopageabstract
+%%%%%%%%%%%%%%%%%%%
+% SUMMARY
+% FILL IN / MODIFY
+% OR REMOVE ENTIRELY (upon agreement with your supervisor)
+% (appropriate to remove in most theses)
+%%%%%%%%%%%%%%%%%%%
+% \begin{summarypage}
+% \section*{Summary section}
+%
+% \lipsum[1][1-8]
+%
+% \section*{Summary section}
+%
+% \lipsum[2][1-6]
+%
+% \section*{Summary section}
+%
+% \lipsum[3]
+%
+% \section*{Summary section}
+%
+% \lipsum[2]
+%
+% \section*{Summary section}
+%
+% \lipsum[1][1-8] Lorem lorem lorem.
+% \end{summarypage}
+%%%%%%%%%%%%%%%%%%%
+% SUMMARY END
+%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents % do not remove this command
+%%%%%%%%%%%%%%%%%%%%%%
+% list of other contents: figures, tables, code listings, algorithms, etc.
+% add/remove commands accordingly
+%%%%%%%%%%%%%%%%%%%%%%
+\listoffigures % list of figures
+\begingroup
+\let\clearpage\relax
+\listoftables % list of tables
+%%\thectufitlistingscommand
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%
+% ABBREVIATIONS
+% FILL IN / MODIFY
+% OR REMOVE ENTIRELY
+% List the abbreviations in lexicography order.
+%%%%%%%%%%%%%%%%%%%
+\chapter{\thectufitabbreviationlabel}
+
+\begin{longtable}{p{2.5cm}p{9.5cm}}
+
+\textbf{ADT} & Authorisation Delegation Table – tabulka delegování oprávnění v metodologii DEMO. \\
+\textbf{AI} & Artificial Intelligence – oblast informatiky zabývající se simulací inteligentního chování. \\
+\textbf{AM} & Action Model – model pravidel chování aktorů v DEMO. \\
+\textbf{ARS} & Action Rule Specification – specifikace pravidla akce v DEMO. \\
+\textbf{ASPI} & Automatizovaný systém právních informací – český systém pro přístup k legislativě. \\
+\textbf{BORM} & Business Object Relation Modelling – metodologie pro modelování procesů a vztahů. \\
+\textbf{BPMN} & Business Process Model and Notation – standard pro modelování podnikových procesů. \\
+\textbf{BPMS} & Business Process Management System – systém pro správu podnikových procesů. \\
+\textbf{CM} & Cooperation Model – model kooperace v metodě DEMO. \\
+\textbf{CSD} & Coordination Structure Diagram – diagram organizačních vztahů v DEMO. \\
+\textbf{CUT} & Create Use Table – tabulka tvorby a užití v DEMO. \\
+\textbf{DEMO} & Design and Engineering Methodology for Organizations – metodika modelování organizací. \\
+\textbf{DOLCE} & Descriptive Ontology for Linguistic and Cognitive Engineering – základní ontologie pro popis světa. \\
+\textbf{EDPB} & European Data Protection Board – Evropský sbor pro ochranu osobních údajů. \\
+\textbf{FM} & Fact Model – model faktů v DEMO. \\
+\textbf{GFO} & General Formal Ontology – formální ontologie. \\
+\textbf{GRASP} & General Responsibility Assignment Software Patterns – návrhové vzory pro přidělování zodpovědností. \\
+\textbf{HYPO} & Hypothetical Case-Based Reasoning System – simulace právního uvažování pomocí případů. \\
+\textbf{ID} & Identifier – jednoznačný identifikátor objektu. \\
+\textbf{IT} & Information Technology – oblast informačních technologií. \\
+\textbf{JSON-LD} & JavaScript Object Notation for Linked Data – formát propojených dat na bázi JSON. \\
+\textbf{LKIF} & Legal Knowledge Interchange Format – formát pro sdílení právních znalostí. \\
+\textbf{LLM} & Large Language Model – velký jazykový model pro zpracování textu. \\
+\textbf{MOF} & Meta-Object Facility – metamodelovací rámec od OMG. \\
+\textbf{NEMO} & Next Generation Enterprise Modelling Ontology – ontologie pro pokročilé modelování podniků. \\
+\textbf{NKOD} & Národní katalog otevřených dat – český katalog otevřených vládních dat. \\
+\textbf{OCD} & Organization Construction Diagram – konstrukční diagram organizace v DEMO, nyní CSD. \\
+\textbf{OCL} & Object Constraint Language – jazyk pro definici podmínek v UML. \\
+\textbf{ODRL} & Open Digital Rights Language – jazyk pro popis pravidel použití dat. \\
+\textbf{OER} & Organization Organisational Essence Revealing – organizační kontext a vztahy v DEMO. \\
+\textbf{OFD} & Object Fact Diagram - diagram objektů v DEMO. \\
+\textbf{OMG} & Object Management Group – konsorcium pro standardizaci UML, MOF apod. \\
+\textbf{OntoUML} & Ontology-Driven Unified Modeling Language – ontologicky založený profil jazyka UML pro přesné sémantické modelování. \\
+\textbf{PIF} & Performa-Informa-Forma – analýza typů aktů v DEMO. \\
+\textbf{PM} & Procesní Model – model procesů v DEMO. \\
+\textbf{PSD} & Process Structure Diagram – diagram struktury procesů v DEMO. \\
+\textbf{TPD} & Transact Pattern Diagram – diagram pro jednotlivé scénáře transakcí v DEMO. \\
+\textbf{TPT} & Transactor Product Table – tabulka transakcí a produktů v DEMO. \\
+\textbf{UFO} & Unified Foundational Ontology – ontologický základ pro OntoUML. \\
+\textbf{UML} & Unified Modeling Language – standardizovaný jazyk pro vizuální modelování. \\
+\textbf{URM} & Usage Rights Management – správa práv k užívání digitálního obsahu \\
+\textbf{WIS} & Work Instruction Specification – specifikace pracovních instrukcí v DEMO. \\
+\textbf{XML} & eXtensible Markup Language – značkovací jazyk pro strukturovaná data. \\
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%
+% ABBREVIATIONS END
+%%%%%%%%%%%%%%%%%%%
+\resumeTOCentries
+\mainmatter\mainmatterinit % do not remove these two commands
+%%%%%%%%%%%%%%%%%%%
+% THE THESIS
+% MODIFY ANYTHING BELOW THIS LINE
+%%%%%%%%%%%%%%%%%%%
+
+\include{text/text} % include `text.tex' from `text/' subdirectory
+
+% \appendix\appendixinit % do not remove these two commands
+
+% \include{text/appendix} % include `appendix.tex' from `text/' subdirectory
+
+\backmatter % do not remove this command
+
+\printbibliography % print out the BibLaTeX-generated bibliography list
+
+\include{text/medium} % include `medium.tex' from `text/' subdirectory
+
+\end{document}
