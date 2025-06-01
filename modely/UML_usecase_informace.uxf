@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>0</x>
+      <y>410</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Subjekt údajů</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>440</x>
+      <y>310</y>
+      <w>80</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Správce</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>190</x>
+      <y>250</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Poskytnout informace 
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>380</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Zvolit formu sdělení
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>510</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Ověřit totožnost subjektu 
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>310</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Přijmout informace
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>190</x>
+      <y>440</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Požádat o ústní formu
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>590</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Poskytnout údaje 
+k ověření totožnosti
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>270</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;110.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>330</y>
+      <w>120</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;80.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>330</y>
+      <w>140</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;100.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>430</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;110.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>350</y>
+      <w>110</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;180.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>440</y>
+      <w>140</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;120.0;170.0</additional_attributes>
+  </element>
+</diagram>

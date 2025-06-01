@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>198</x>
+      <y>0</y>
+      <w>60</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>_:Subjekt_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>360</x>
+      <y>0</y>
+      <w>60</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>_:Správce_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>12</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>384</x>
+      <y>42</y>
+      <w>12</w>
+      <h>720</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>42</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+poskytnoutOsobniUdaje(udaje)</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>60</y>
+      <w>138</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+overZdaJdeODite(udaj)</panel_attributes>
+    <additional_attributes>10.0;60.0;60.0;60.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>210</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+dotazNaFormuSdeleni()</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>234</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+zvolenaForma(forma)</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>306</x>
+      <y>108</y>
+      <w>270</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>opt 
+[jeDite = true]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>102</y>
+      <w>18</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>222</x>
+      <y>168</y>
+      <w>12</w>
+      <h>594</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>120</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+upravJazykNaJednodussi(jazyk)</panel_attributes>
+    <additional_attributes>10.0;60.0;60.0;60.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>222</x>
+      <y>12</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>18</x>
+      <y>192</y>
+      <w>558</w>
+      <h>462</h>
+    </coordinates>
+    <panel_attributes>loop
+[forma = "ustni" AND totoznostOverena = false]
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>576</y>
+      <w>168</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zvolElektronickouFormu(forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>516</y>
+      <w>150</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zvolPisemnouFormu(forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>282</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+overitTotoznost()</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>306</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+poskytnutiUdaju()</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>66</x>
+      <y>270</y>
+      <w>486</w>
+      <h>354</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+forma = "ustni"
+-.
+
+
+
+
+forma = "pisemna"
+-.
+
+
+
+
+forma = "elektronicka"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>318</y>
+      <w>150</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+totoznostOverena: boolean</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>78</x>
+      <y>372</y>
+      <w>462</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+
+
+totoznostOverena = false
+-.
+
+
+
+
+
+totoznostOverena = true</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>378</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+odeslatOznameniOOdmitnuti()</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>426</y>
+      <w>150</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zvolPisemnouFormu(forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>666</y>
+      <w>180</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+pripravSdeleni(obsah, jazyk, forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>708</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+odeslatSdeleni(obsah)</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>222</x>
+      <y>36</y>
+      <w>12</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>222</x>
+      <y>84</y>
+      <w>18</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>

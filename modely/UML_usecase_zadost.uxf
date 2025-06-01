@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>0</x>
+      <y>240</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Subjekt údajů</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>440</x>
+      <y>140</y>
+      <w>80</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Správce</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>160</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;70.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>160</y>
+      <w>140</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;100.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>250</y>
+      <w>140</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;120.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>160</y>
+      <w>160</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;130.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>150</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Podat žádost 
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>630</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Přijmout odpověď
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>210</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Přijmout žádost
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>270</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Ověřit totožnost
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>180</x>
+      <y>320</y>
+      <w>160</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Poskytnout údaje
+k ověření totožnosti
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>250</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;100.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>680</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Podat stížnost
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>250</y>
+      <w>140</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;120.0;450.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>190</x>
+      <y>400</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Posoudit přiměřenost
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>460</y>
+      <w>140</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Posoudit důvodnost
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>160</y>
+      <w>140</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;260.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>160</y>
+      <w>140</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;320.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>520</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Vyhovět žádosti
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>200</x>
+      <y>580</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Zamítnout žádost
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>160</y>
+      <w>150</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;380.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>160</y>
+      <w>160</w>
+      <h>460</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;440.0;140.0;10.0</additional_attributes>
+  </element>
+</diagram>

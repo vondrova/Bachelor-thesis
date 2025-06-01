@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>185</x>
+      <y>160</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>_:Subjekt_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>320</x>
+      <y>160</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>_:Správce_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>170</y>
+      <w>15</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>340</x>
+      <y>195</y>
+      <w>10</w>
+      <h>600</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>65</x>
+      <y>195</y>
+      <w>285</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+poskytnoutOsobniUdaje(udaje)</panel_attributes>
+    <additional_attributes>550.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>210</y>
+      <w>115</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+overZdaJdeODite(udaj)</panel_attributes>
+    <additional_attributes>10.0;60.0;60.0;60.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>335</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+dotazNaFormuSdeleni()</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>355</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+zvolenaForma(forma)</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>275</x>
+      <y>250</y>
+      <w>225</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>opt 
+[jeDite = true]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>245</y>
+      <w>15</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>205</x>
+      <y>300</y>
+      <w>10</w>
+      <h>495</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>260</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+upravJazykNaJednodussi(jazyk)</panel_attributes>
+    <additional_attributes>10.0;60.0;60.0;60.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>205</x>
+      <y>170</y>
+      <w>15</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>35</x>
+      <y>320</y>
+      <w>465</w>
+      <h>385</h>
+    </coordinates>
+    <panel_attributes>loop
+[forma = "ustni" AND totoznostOverena = false]
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>640</y>
+      <w>140</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zvolElektronickouFormu(forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>590</y>
+      <w>125</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zvolPisemnouFormu(forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>395</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+overitTotoznost()</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>415</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+poskytnutiUdaju()</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>75</x>
+      <y>385</y>
+      <w>405</w>
+      <h>295</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+forma = "ustni"
+-.
+
+
+
+
+forma = "pisemna"
+-.
+
+
+
+
+forma = "elektronicka"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>425</y>
+      <w>125</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+totoznostOverena: boolean</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>85</x>
+      <y>470</y>
+      <w>385</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+
+
+totoznostOverena = false
+-.
+
+
+
+
+
+totoznostOverena = true</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>475</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+odeslatOznameniOOdmitnuti()</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>515</y>
+      <w>125</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zvolPisemnouFormu(forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>715</y>
+      <w>150</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+pripravSdeleni(obsah, jazyk, forma)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>750</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+odeslatSdeleni(obsah)</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>40</x>
+      <y>155</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>_:TretiStrana_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>60</x>
+      <y>195</y>
+      <w>10</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>60</x>
+      <y>165</y>
+      <w>15</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>

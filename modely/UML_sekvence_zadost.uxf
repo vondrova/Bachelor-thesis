@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>210</x>
+      <y>0</y>
+      <w>60</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>_:Subjekt_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>390</x>
+      <y>0</y>
+      <w>60</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>_:Správce_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>414</x>
+      <y>36</y>
+      <w>12</w>
+      <h>828</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>54</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+overTotoznost()</panel_attributes>
+    <additional_attributes>10.0;60.0;60.0;60.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>60</x>
+      <y>102</y>
+      <w>546</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>opt 
+[overenaTotoznost = false]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>234</x>
+      <y>36</y>
+      <w>12</w>
+      <h>408</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>36</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+podatZadost(pravo)</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>12</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>12</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>120</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+pozadavekNaOvereni()</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>150</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+poskytnoutUdaje: boolean</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>90</x>
+      <y>186</y>
+      <w>480</w>
+      <h>222</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+
+
+
+poskytnoutUdaje = false
+-.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+poskytnoutUdaje = true</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>198</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+zamitnoutZadost()</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>252</y>
+      <w>150</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+totoznostOverena: boolean</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>108</x>
+      <y>306</y>
+      <w>450</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>opt
+totoznostOverena = false
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>312</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+zamitnoutZadost()</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>438</y>
+      <w>156</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+posouditPrimerenostZadosti()</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>486</y>
+      <w>156</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+posouditDuvodnostZadosti()</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>54</x>
+      <y>540</y>
+      <w>552</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+
+
+primerenost = false AND duvodnost = false
+-.
+
+
+
+
+
+
+
+
+
+
+
+
+
+primerenost = false XOR duvodnost = false 
+-.
+
+
+
+
+
+
+
+
+
+primerenost = true AND duvodnost = true</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>552</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+zamitnoutZadost(duvody)</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>600</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+pozadavekNaPoplatek(castka)</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>630</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+uhraditPoplatek(castka)</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>648</y>
+      <w>132</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+vykonatOpatreni(pravo)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>690</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+odeslatPotvrzeni()</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>732</y>
+      <w>132</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+vykonatOpatreni(pravo)</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;70.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>780</y>
+      <w>186</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+odeslatPotvrzeni()</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>438</y>
+      <w>18</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>234</x>
+      <y>528</y>
+      <w>12</w>
+      <h>336</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+</diagram>
